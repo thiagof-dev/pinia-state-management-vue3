@@ -7,7 +7,7 @@ const store = useCounterStore()
 
 const {counter, doubleCount} = storeToRefs(store)
 
-const {increment} = store
+const {increment,reset} = store
 
 </script>
 
@@ -16,5 +16,5 @@ const {increment} = store
 <h2>Double count: {{doubleCount}}</h2>
 <button @click="increment"> Add + 1</button>
 <br>
-<button>Resset</button>
+<button @click="reset">Resset</button>
 </template>
